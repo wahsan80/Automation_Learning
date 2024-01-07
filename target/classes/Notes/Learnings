@@ -1,0 +1,18 @@
+/* WebDriverManager is an open-source Java library that carries out the management (i.e., download, 
+		 * setup, and maintenance) of the drivers required by Selenium WebDriver (e.g., chromedriver, 
+		 * geckodriver, msedgedriver, etc.) in a fully automated manner. In addition, WebDriverManager 
+		 * provides other relevant features, such as the capability to discover browsers installed in the local
+		 * system, building WebDriver objects (such as ChromeDriver, FirefoxDriver, EdgeDriver, etc.), and 
+		 * running browsers in Docker containers seamlessly.
+		 * setup() to setup the browser in an automation script. 
+		 */
+
+// You are creating an instance of the WebDriver interface and casting it to ChromeDriver Class.
+// WebDriver (Interface) extends ChromeDriver (Class)
+		
+		/* src/main/java places your code that use for real production. src/test/java places your test use case
+		 *  code, like junit test. These codes would be executed when doing maven package things. These codes 
+		 *  won't be packaged to your war or jar file. Which means these codes won't for real production.
+		 */
+		 
+		 WebDriverManager with setup method?
