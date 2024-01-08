@@ -1,4 +1,4 @@
-package week1_Jan02_Jan07_Auto;
+package week1_Jan02_Jan07;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
