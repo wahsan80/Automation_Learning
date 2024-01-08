@@ -1,0 +1,42 @@
+Challenge faced today: Wasn't able to push code into my Github account
+Error: Server couldn't access the account because SSH public key was missing or not accessable.
+Solution Steps: 
+
+* Git SSH authentication key might be in the email account associated with. 
+
+1. Open Git Bash. 
+2. Enter ls -al ~/.ssh to see if existing SSH keys are present. 
+3. Check the directory listing to see if you already have a public SSH key. By default, the filenames of 
+supported public keys for GitHub are one of the following.
+
+id_rsa.pub
+id_ecdsa.pub
+id_ed25519.pub
+
+Directory Listing Shown Below. 
+
+drwxr-xr-x 1 w_ahs 197609   0 Jan  5 15:46 ./
+drwxr-xr-x 1 w_ahs 197609   0 Jan  5 15:43 ../
+-rw-r--r-- 1 w_ahs 197609 411 Oct  8  2022 id_ed25519
+-rw-r--r-- 1 w_ahs 197609 101 Oct  8  2022 id_ed25519.pub (<-Existing Key Present)
+-rw-r--r-- 1 w_ahs 197609 828 Jan  5 15:46 known_hosts
+-rw-r--r-- 1 w_ahs 197609 656 Dec  3  2022 known_hosts.old
+
+4. Either generate a new SSH key or upload an existing key.
+5. In a terminal window without elevated permissions, add your SSH private key to the ssh-agent.
+If you created your key with a different name, or if you are adding an existing key that has a
+different name, replace id_ed25519 in the command with the name of your private key file.
+6. ssh-add c:\Users\YOU\.ssh\id_ed25519
+7. Adding a new SSH key to your Git Hub account
+8. Copy the SSH public key to your clipboard
+9. $ clip < ~/.ssh/id_ed25519.pub
+# Copies the contents of the id_ed25519.pub file to your clipboard
+10. In the upper-right corner of any page, click your profile photo, then click Settings.
+11. In the "Access" section of the sidebar, click  SSH and GPG keys.
+12. Click New SSH key or Add SSH key.
+13. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal 
+laptop, you might call this key "Personal laptop".
+14. Select the type of key, either authentication or signing
+15. In the "Key" field, paste your public key.
+16. Click Add SSH key.
+17. If prompted, confirm access to your account on GitHub.
