@@ -1,0 +1,8 @@
+Git Execution Commands
+
+1. Move the cursor to the file folder. 
+2. Right Click on Project Name -> Properties -> Location (Show in System Explorer)
+3. Click on Project Folder Name
+4. Right Click on Blank Space -> Click on Show more options -> Click on Git Bash Here -> Should Open Command Prompt
+
+

@@ -1,0 +1,19 @@
+Web Elements
+What we do with them? 1. Highlight them, 2. Identify them
+What could be web elements
+Links, Radio Buttons, Checkboxes, text, images, Alerts/Pop Ups, WebTables, Buttons, Frames, Captchas, Barcodes,
+dropdown, calenders, editable textboxes, 
+
+16 ways to do it
+
+Press F12 and it will open DOM (Document Object Model)
+Understand little bit about DOM (html)
+
+<html> 
+	<head> ... </head>
+	<body> ... </body>
+<html> 
+
+Right click on any particular element > Inspect
+
+Chrome vertical dots > More Tools > Developer tools
