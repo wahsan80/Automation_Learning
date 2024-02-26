@@ -5,4 +5,9 @@ Git Execution Commands
 3. Click on Project Folder Name
 4. Right Click on Blank Space -> Click on Show more options -> Click on Git Bash Here -> Should Open Command Prompt
 
+Commands: 
+git status
+git add . (Only adds the new working)
+git add origin master or main git@github.com:wahsan80/Selenium_Automation.git
+git push -u origin main
 
