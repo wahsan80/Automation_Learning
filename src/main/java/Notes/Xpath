@@ -1,0 +1,30 @@
+Xpath - Address of a Web Element
+
+Xpath are divided into 2 types. 1. Absolute Xpath. 2. Realtive/Dynamic/Customized Xpath
+
+Absolute Xpath is very direct and is 100% accurate but it is 100% risky to use in Automation
+
+attributes = id, class and name
+
+Syntax Format -> html[@attribute = 'ValueOfTheAttribute']
+Example		  -> a[@class = 'login']
+
+// 1. html[@attribute1 = 'value1' or @attribute2 = 'value2']
+// 1. html[@attribute1 = 'value1' and @attribute2 = 'value2']
+
+// 2.1 input[@id = 'email_create' or @name = 'email_create']
+// 2.2 input[@id = 'email_create' and @name = 'email_create']
+
+3. Where there is text
+// html[text() = 'textcontent']
+
+4. Using 'contains'
+// html[contains(text(), 'textcontent')]
+// a[contains(text(), 'Sign In')]
+// html[contains(@attribute, 'value')]
+// a[contains(@class, 'login')]
+
+Why we use XPath instead of ID?
+For example, if there is no element with unique attributes and you need to select the element based on visible 
+text, then you need to use XPath; in another case when you have an id, class, or any other unique attribute 
+available at the element level, using XPath may complicate the framework.

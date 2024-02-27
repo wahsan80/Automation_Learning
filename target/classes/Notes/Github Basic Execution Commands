@@ -7,6 +7,7 @@ Git Execution Commands
 
 Commands: 
 git status
+git add -A (Adds everything)
 git add . (Only adds the new working)
 git add origin master or main git@github.com:wahsan80/Selenium_Automation.git
 git push -u origin main
