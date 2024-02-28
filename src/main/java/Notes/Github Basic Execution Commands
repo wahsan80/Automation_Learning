@@ -9,6 +9,7 @@ Commands:
 git status
 git add -A (Adds everything)
 git add . (Only adds the new working)
-git add origin master or main git@github.com:wahsan80/Selenium_Automation.git
+git commit -m "Note or Comment"
+git add origin master or main git@github.com:wahsan80/Selenium_Automation.git (Relevant Path for Github Repository)
 git push -u origin main
 
