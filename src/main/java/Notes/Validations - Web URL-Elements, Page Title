@@ -1,0 +1,11 @@
+Validation methods to check whether web URL and page title are correct or not
+
+getTitle();
+getCurrentUrl();
+getPageSource();
+
+Validation for Web Elements
+
+isSelected();
+isDisplayed();
+isEnabled();
