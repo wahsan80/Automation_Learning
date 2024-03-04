@@ -1,0 +1,12 @@
+List of all methods/functions that can be frequently used
+
+Method - Usage
+
+print()
+println()
+
+getTitle()
+getCurrentUrl()
+
+size() - allDivTags.size()
+getTagName()

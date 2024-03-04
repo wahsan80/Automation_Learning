@@ -24,7 +24,23 @@ Example		  -> a[@class = 'login']
 // html[contains(@attribute, 'value')]
 // a[contains(@class, 'login')]
 
-Why we use XPath instead of ID?
+Why we use XPath instead of ID, class, name?
 For example, if there is no element with unique attributes and you need to select the element based on visible 
 text, then you need to use XPath; in another case when you have an id, class, or any other unique attribute 
 available at the element level, using XPath may complicate the framework.
+
+Basic Xpaths
+
+//html[@attribute = 'value']
+//html[@attribute1 = 'value1' and @attribute2 = 'value2']
+//html[@attribute1 = 'value1' or @attribute2 = 'value2']
+//html[text() = 'valueofthetext']
+//html[contains(text(), 'valueoftheattribute')]
+//html[contains(@attribute, 'valueoftheattribute')]
+--------------------------------------------------------
+Compound Class
+
+multiple values
+
+By.className("compound value") - Do not use
+By.xpath("") - this is ok
