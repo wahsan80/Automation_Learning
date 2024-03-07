@@ -1,0 +1,43 @@
+Advanced Xpath
+
+Approach: Top down. Start from above and then move down.
+Key Words: 'descendant', 'child', 'following-sibling' 
+Key Symbols: '/', '::'
+
+Approach: Bottom up. (Start from below and move upwards or backwards)
+Key Words: 'preceding', 'preceding-sibling'
+
+
+https://openweathermap.org/ - Website
+
+//li[@class = 'logo']                    (Starting Xpath Point)
+//li[@class = 'logo']/a/img              (Move or traverse to this point using single forward slash '/')
+//li[@class = 'logo']/descendant::img[1] (Another way of doing it using 'descendant')
+
+Another Example
+
+//nav[@id = 'nav-website'] (Basic Xpath)
+//nav[@id = 'nav-website']/ul[1]/li[1]/a/img[1] (Move or traverse to this location. Although valid but not a
+                                                 good xpath.)
+//nav[@id = 'nav-website']/descendant::img[1]   (Same result but easier, straight forward and effective)  
+
+The descendant combinator matches a child, grandchild, and so on. The child combinator selects elements that are 
+direct children of another element. You use the greater than symbol (>) between selectors to specify that one 
+selector is a direct child of the other.               
+
+//body[@class = 'body-orange']/child::nav[1]/descendant::img[1] 
+
+Learning: Descendant moves one by one. Child can jump from different elements and then descend. 
+
+//body[@class = 'body-orange']/child::div[1]/following-sibling::nav[1]/descendant::img[1] 
+(Can use 'child' and then 'following-sibling' to jump and then traverse using 'descendant')   
+
+//div[@id = 'topcontrol']/preceding-sibling::main[@class = 'wrapper']/preceding::img[2] (Moving Backwards.)
+
+Website: rediff.com
+
+//p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[1] 
+//p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[text() = 'Create Account']
+//p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[text() = 'Create Account']/preceding-sibling::a[1]
+(Traversing elements using following and preceding in the same Xpath)                             
+

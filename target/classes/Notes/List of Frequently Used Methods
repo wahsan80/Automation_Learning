@@ -2,11 +2,27 @@ List of all methods/functions that can be frequently used
 
 Method - Usage
 
+firefoxdriver()
+setup()
+manage()
+window()
+maximize()
+get()
+
 print()
 println()
+
+findElement()
 
 getTitle()
 getCurrentUrl()
 
+isDisplayed()
+isEnabled()
+isSelected()
+equals()
+
 size() - allDivTags.size()
 getTagName()
+
+quit()
