@@ -21,6 +21,7 @@ isDisplayed()
 isEnabled()
 isSelected()
 equals()
+add.Adguments("incognito") - Use with 'options' key word/. Acts similar as 'driver'
 
 size() - allDivTags.size()
 getTagName()

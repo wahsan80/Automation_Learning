@@ -5,8 +5,11 @@ Key Words: 'descendant', 'child', 'following-sibling'
 Key Symbols: '/', '::'
 
 Approach: Bottom up. (Start from below and move upwards or backwards)
-Key Words: 'preceding', 'preceding-sibling'
+Key Words: 'preceding', 'preceding-sibling', 'ancestor'
 
+Approach: Search
+Key Words: 'starts_with', 'ends-with'
+Reference: Dynamic web elements that change with page refreshes. 
 
 https://openweathermap.org/ - Website
 
@@ -34,10 +37,30 @@ Learning: Descendant moves one by one. Child can jump from different elements an
 
 //div[@id = 'topcontrol']/preceding-sibling::main[@class = 'wrapper']/preceding::img[2] (Moving Backwards.)
 
+//a[@class = 'smartbanner__exit']/ancestor::body[1] 
+//a[@class = 'smartbanner__exit']/ancestor::div[2]
+
+//html[starts-with(@attribute, 'StartingValueOfTheAttribute')]
+(The XPath starts-with method will check the starting text of our
+ attribute and find the element which attribute will change dynamically. The method is used to check the starting
+ text of an attribute, and it also finds from which element attribute will change dynamically when we refresh 
+ the page.)
+ 
+ //div[ends-with(@class, 'smartbanner__exit')] - 
+ //html[ends-with(@attribute, 'StartingValueOfTheAttribute')]
+The ends-with() function checks whether a string attribute ends with a specific string (case-insensitive) as a 
+sub-string.
+Example
+This query returns all customers whose name ends with the sub-string sen:
+//Sales.Customer[ends-with(Name, 'sen')]
+Customers with the name “Jansen” or “Isaacsen” will be returned, for example, because both names end with “sen.”
+
 Website: rediff.com
 
 //p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[1] 
 //p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[text() = 'Create Account']
 //p[@id = 'signin_info']/child::a[@class = 'signin']/following-sibling::a[text() = 'Create Account']/preceding-sibling::a[1]
-(Traversing elements using following and preceding in the same Xpath)                             
+(Traversing elements using following and preceding in the same Xpath)             
+
+                
 
