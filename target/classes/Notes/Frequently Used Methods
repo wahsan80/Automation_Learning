@@ -3,6 +3,7 @@ List of all methods/functions that can be frequently used
 Method - Usage
 
 firefoxdriver()
+chromedriver()
 setup()
 manage()
 window()
@@ -12,7 +13,20 @@ get()
 print()
 println()
 
+timeouts()
+implicitlyWait()
+ofSeconds()
 findElement()
+selectByVisibleText() // Select class & object for drop down. 
+selectByIndex() - Not Recommended
+selectByValue() - Not Recommended
+
+switchTo()
+alert()
+getText()
+accept()
+dismiss()
+sleep()
 
 getTitle()
 getCurrentUrl()
