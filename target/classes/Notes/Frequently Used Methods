@@ -28,6 +28,15 @@ accept()
 dismiss()
 sleep()
 
+newWindow()
+navigate()
+to()
+
+getScreenshotAs()
+getProperty()
+copy()
+
+
 getTitle()
 getCurrentUrl()
 
