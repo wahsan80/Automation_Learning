@@ -36,7 +36,6 @@ getScreenshotAs()
 getProperty()
 copy()
 
-
 getTitle()
 getCurrentUrl()
 
@@ -50,3 +49,5 @@ size() - allDivTags.size()
 getTagName()
 
 quit()
+
+length()
