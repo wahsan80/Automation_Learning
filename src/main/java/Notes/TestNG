@@ -1,0 +1,31 @@
+Test NG
+
+Make sure you have Test NG installed and/or configured within Eclipse and/or Project 
+
+* Will add how to do that in later part
+
+* Make sure that TestNG version is compatible. Last 2.3 versions are usually good to work with. 
+* Starting with version 7.7.1 (or look within the pom.xml file)
+* Relevant dependencies need to be copied from Maven Repository and added into the pom.xml file.
+
+2 Options with TestNG within the Project
+
+1. Create TestNG class (Creates a new class with all the relevant annotations)
+This provides ready to use template. Just change the method names for better understanding. 
+
+Right Click on Project Name or (package name within src/test/java) -> TestNG -> Create TestNG class
+
+2. Convert to TestNG (Converts an existing class with relevant annotations.)
+
+Right Click on Project Name or (package name within src/test/java) -> TestNG -> Convert to TestNG
+
+TestNG annotations in execution priority are: 
+Before: @BeforeSuite, @BeforeTest, @BeforeClass, @BeforeMethod
+Test: @Test
+After: @AfterSuite, AfterTest, AfterClass, AfterMethod
+* Doesn't matter how you write the code or methods, code will be executed with the priority. 
+* TestNG will replace the main() method in the class and will become the driver of the class with it's priority 
+annotation. 
+
+
+
