@@ -20,12 +20,25 @@ Right Click on Project Name or (package name within src/test/java) -> TestNG -> 
 Right Click on Project Name or (package name within src/test/java) -> TestNG -> Convert to TestNG
 
 TestNG annotations in execution priority are: 
-Before: @BeforeSuite, @BeforeTest, @BeforeClass, @BeforeMethod
+Before: @BeforeSuite, @BeforeClass, @BeforeMethod, @BeforeTest
 Test: @Test
 After: @AfterSuite, AfterTest, AfterClass, AfterMethod
 * Doesn't matter how you write the code or methods, code will be executed with the priority. 
 * TestNG will replace the main() method in the class and will become the driver of the class with it's priority 
 annotation. 
+* Helps with the execution and control flow of the program. 
+
+Key Words:
+
+@Test (priority = 1) = sets the priority for the test cases for execution. 
+@Test (enabled = false) = skips or bypass the test case
+@Test (enabled = true) = Ensures that test gets executed
+@Test (invocationCount = n) = n is the number of times code need to get executed. 
+@Test (dependsOnMethods = "specifyTestCaseName") = specify the name of the parent test method on which the test 
+                                                 = should be dependent.
+Assert.fail = terminates the code/program at this execution stage, or only test case? 
+alwaysRun = true = Ensures that this test case is run as a must case scenario.
+
 
 
 

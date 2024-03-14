@@ -28,11 +28,17 @@ public class PlayAround {
 	}
 	
 	@Test
+	public void printTitle() {
+		
+		System.out.println("Title of the landing page is: " + driver.getTitle());
+	}
+	
+	@Test
 	public void signIn() {
 		
 		driver.findElement(By.className("signin")).click();
 		// Running this test alone will not pass because it doesn't know which browser to work with
-		// Error - no such element: Unable to locate element
+		// Potential Error - no such element: Unable to locate element
 	}
 
 	@AfterTest
