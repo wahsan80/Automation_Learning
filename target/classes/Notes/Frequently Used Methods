@@ -53,3 +53,17 @@ quit()
 length()
 
 fail() // Assert.fail(); // Terminates the program/code.
+
+Wrapper Classes:
+
+intValue(), 
+byteValue(), 
+shortValue(), 
+longValue(), 
+floatValue(), 
+doubleValue(), 
+charValue(), 
+booleanValue()
+toString()
+parseDouble()
+valueOf()
