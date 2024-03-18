@@ -53,6 +53,11 @@ quit()
 length()
 
 fail() // Assert.fail(); // Terminates the program/code.
+assertTrue(true/false)
+assetEquals(actual, expected)
+Assert.assertNotEquals(null, null)
+Assert.assertFalse(false)
+assertAll()
 
 Wrapper Classes:
 

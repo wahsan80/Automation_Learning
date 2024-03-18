@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing_Code_Mar14.Dependency_Ops">
+      <class name="testing_Code_Mar18.SoftAssert_Concept">
         <methods>
-          <include name="tc5"/>
-          <include name="tc3"/>
-          <include name="tc1"/>
-          <include name="tc4"/>
-          <include name="tc2"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- testing_Code_Mar14.Dependency_Ops -->
+      </class> <!-- testing_Code_Mar18.SoftAssert_Concept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
