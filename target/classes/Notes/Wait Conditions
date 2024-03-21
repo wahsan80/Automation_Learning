@@ -1,0 +1,16 @@
+Wait Conditions
+
+Explicit Wait
+Implicit Wait
+Fluent Wait
+
+https://www.browserstack.com/guide/wait-commands-in-selenium-webdriver
+
+While running Selenium tests, it is common for testers to get the message “Element Not Visible Exception“. This 
+appears when a particular web element with which WebDriver has to interact, is delayed in its loading. To prevent
+ this Exception, Selenium Wait Commands must be used.
+
+In automation testing, Selenium Webdriver wait commands direct test execution to pause for a certain length of
+ time before moving onto the next step. This enables WebDriver to check if one or more web elements are 
+ present/visible/enriched/clickable, etc.
+
