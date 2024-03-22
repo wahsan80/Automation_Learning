@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-21T15:32:18 EDT" name="Default suite" finished-at="2024-03-21T15:32:26 EDT" duration-ms="7773">
+  <suite started-at="2024-03-21T22:27:32 EDT" name="Default suite" finished-at="2024-03-21T22:27:38 EDT" duration-ms="5760">
     <groups>
     </groups>
-    <test started-at="2024-03-21T15:32:18 EDT" name="Default test" finished-at="2024-03-21T15:32:26 EDT" duration-ms="7773">
-      <class name="testing_Code_Mar21.Explicit_Wait">
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:testing_Code_Mar21.Explicit_Wait@5d534f5d]" started-at="2024-03-21T15:32:18 EDT" name="openUrl" finished-at="2024-03-21T15:32:23 EDT" duration-ms="4955" status="PASS">
+    <test started-at="2024-03-21T22:27:32 EDT" name="Default test" finished-at="2024-03-21T22:27:38 EDT" duration-ms="5760">
+      <class name="testing_Code_Mar21.Web_Driver_Wait">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:32 EDT" name="browserSetup" finished-at="2024-03-21T22:27:34 EDT" duration-ms="1647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openUrl -->
-        <test-method signature="signIn()[pri:0, instance:testing_Code_Mar21.Explicit_Wait@5d534f5d]" started-at="2024-03-21T15:32:23 EDT" name="signIn" finished-at="2024-03-21T15:32:26 EDT" duration-ms="2488" status="PASS">
+        </test-method> <!-- browserSetup -->
+        <test-method signature="openBrowser()[pri:1, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:34 EDT" name="openBrowser" finished-at="2024-03-21T22:27:36 EDT" duration-ms="1723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="signIn()[pri:2, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:36 EDT" name="signIn" finished-at="2024-03-21T22:27:38 EDT" duration-ms="1782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signIn -->
-        <test-method is-config="true" signature="closeUrl()[pri:0, instance:testing_Code_Mar21.Explicit_Wait@5d534f5d]" started-at="2024-03-21T15:32:26 EDT" name="closeUrl" finished-at="2024-03-21T15:32:26 EDT" duration-ms="300" status="PASS">
+        <test-method signature="login()[pri:3, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:38 EDT" name="login" finished-at="2024-03-21T22:27:38 EDT" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeUrl()[pri:0, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:38 EDT" name="closeUrl" finished-at="2024-03-21T22:27:38 EDT" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeUrl -->
-      </class> <!-- testing_Code_Mar21.Explicit_Wait -->
+      </class> <!-- testing_Code_Mar21.Web_Driver_Wait -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
