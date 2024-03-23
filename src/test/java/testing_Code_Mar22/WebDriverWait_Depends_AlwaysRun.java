@@ -1,4 +1,4 @@
-package testing_Code_Mar21;
+package testing_Code_Mar22;
 
 import java.time.Duration;
 import org.openqa.selenium.By;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Web_Driver_Wait {
+public class WebDriverWait_Depends_AlwaysRun {
 	
 	public static WebDriver driver;
 	SoftAssert softassert = new SoftAssert();
@@ -35,7 +35,7 @@ public class Web_Driver_Wait {
 		driver.get("https://www.rediff.com");
 	}
 	
-	@Test (priority = 2)
+	@Test (priority = 2, dependsOnMethods = "openBrowser", alwaysRun = true)
 	public void signIn() {
 		
 		WebElement signinLink = driver.findElement(By.className("signin"));
@@ -45,18 +45,23 @@ public class Web_Driver_Wait {
 		softassert.assertAll();
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 3, dependsOnMethods = {"openBrowser", "signIn"}, alwaysRun = true)
 	public void login() {
 		
 		WebElement userNameTextbox = driver.findElement(By.id("login1"));
 		softassert.assertTrue(userNameTextbox.isEnabled());
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(userNameTextbox)).sendKeys("seleniumpanda@rediffmail.com");
 		
 		WebElement passwordTextbox = driver.findElement(By.id("password"));
 		softassert.assertTrue(passwordTextbox.isEnabled());
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(passwordTextbox)).sendKeys("Selenium@123");
+		
+		WebElement signInButton = driver.findElement(By.className("signinbtn"));
+		softassert.assertTrue(signInButton.isDisplayed());
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(signInButton)).click();
 		
 		softassert.assertAll();
 	}

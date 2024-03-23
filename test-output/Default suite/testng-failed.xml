@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing_Code_Mar21.Web_Driver_Wait">
+      <class name="testing_Code_Mar22.Parameterization">
         <methods>
-          <include name="browserSetup"/>
-          <include name="openBrowser"/>
-          <include name="login"/>
+          <include name="launchUrl"/>
           <include name="closeUrl"/>
-          <include name="signIn"/>
+          <include name="browserSetup"/>
         </methods>
-      </class> <!-- testing_Code_Mar21.Web_Driver_Wait -->
+      </class> <!-- testing_Code_Mar22.Parameterization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

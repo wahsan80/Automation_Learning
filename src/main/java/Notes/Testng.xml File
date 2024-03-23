@@ -1,0 +1,16 @@
+Testng.xml file 
+- helps you run in batch
+- helps you in parameterizing test cases
+- helps you in executing test cases in parallel
+
+login username and password
+
+user1 password1
+user2 password2
+user3 password3
+...
+user10000 password10000
+
+TestNG.xml file is a setup/configuration file that helps us in organizing our test cases in the right pattern. 
+It also helps us in making Test Suites and Test methods. By using the XML file approach, it makes it easy to 
+understand the code.

@@ -2,32 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-21T22:27:32 EDT" name="Default suite" finished-at="2024-03-21T22:27:38 EDT" duration-ms="5760">
+  <suite started-at="2024-03-22T22:00:55 EDT" name="Suite" finished-at="2024-03-22T22:01:08 EDT" duration-ms="12629">
     <groups>
     </groups>
-    <test started-at="2024-03-21T22:27:32 EDT" name="Default test" finished-at="2024-03-21T22:27:38 EDT" duration-ms="5760">
-      <class name="testing_Code_Mar21.Web_Driver_Wait">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:32 EDT" name="browserSetup" finished-at="2024-03-21T22:27:34 EDT" duration-ms="1647" status="PASS">
+    <test started-at="2024-03-22T22:00:55 EDT" name="Test" finished-at="2024-03-22T22:01:08 EDT" duration-ms="12629">
+      <class name="testing_Code_Mar22.Parameterization">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:testing_Code_Mar22.Parameterization@52719fb6]" started-at="2024-03-22T22:00:55 EDT" name="browserSetup" finished-at="2024-03-22T22:01:00 EDT" duration-ms="4953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="openBrowser()[pri:1, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:34 EDT" name="openBrowser" finished-at="2024-03-21T22:27:36 EDT" duration-ms="1723" status="PASS">
+        <test-method signature="launchUrl(java.lang.String)[pri:1, instance:testing_Code_Mar22.Parameterization@52719fb6]" started-at="2024-03-22T22:01:00 EDT" name="launchUrl" finished-at="2024-03-22T22:01:02 EDT" duration-ms="1916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.rediff.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="signIn()[pri:2, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:36 EDT" name="signIn" finished-at="2024-03-21T22:27:38 EDT" duration-ms="1782" status="PASS">
+        </test-method> <!-- launchUrl -->
+        <test-method signature="clickOnSignIn()[pri:2, instance:testing_Code_Mar22.Parameterization@52719fb6]" started-at="2024-03-22T22:01:02 EDT" name="clickOnSignIn" finished-at="2024-03-22T22:01:04 EDT" duration-ms="1914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signIn -->
-        <test-method signature="login()[pri:3, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:38 EDT" name="login" finished-at="2024-03-21T22:27:38 EDT" duration-ms="280" status="PASS">
+        </test-method> <!-- clickOnSignIn -->
+        <test-method signature="logIn(java.lang.String,java.lang.String)[pri:3, instance:testing_Code_Mar22.Parameterization@52719fb6]" started-at="2024-03-22T22:01:04 EDT" name="logIn" finished-at="2024-03-22T22:01:06 EDT" duration-ms="2295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpanda@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeUrl()[pri:0, instance:testing_Code_Mar21.Web_Driver_Wait@25641d39]" started-at="2024-03-21T22:27:38 EDT" name="closeUrl" finished-at="2024-03-21T22:27:38 EDT" duration-ms="281" status="PASS">
+        </test-method> <!-- logIn -->
+        <test-method is-config="true" signature="closeUrl()[pri:0, instance:testing_Code_Mar22.Parameterization@52719fb6]" started-at="2024-03-22T22:01:06 EDT" name="closeUrl" finished-at="2024-03-22T22:01:08 EDT" duration-ms="1507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeUrl -->
-      </class> <!-- testing_Code_Mar21.Web_Driver_Wait -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testing_Code_Mar22.Parameterization -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
