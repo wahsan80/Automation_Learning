@@ -1,0 +1,34 @@
+CSS Selectors
+
+Page: rediff.com
+
+html[attribute = value]
+
+if there is a class name with a single value
+
+if there is a class name with compounded values
+
+a[class = signin]
+a.signin
+.signin
+
+html[attribute = value]
+htmltag.value
+.value
+
+html1.value1.value2
+a.moneyicon.relative
+.moneyicon.relative
+
+what if you have an id
+html[attribute = value]
+input[id = login1]
+input#login1
+
+div#div_login_error + div // Transcend
+div#div_login_error + div > div:nth-child(1) > div:nth-child(1) + div input#login1 (login1 element)
+Understand + (Sibling) and > (Child) sign
+div#div_login_error + div > div:nth-child(1) > div:nth-child(1) + div input#login1:nth-child(1) - (Long)
+div.floatL.leftwidth input#login1 - (short)
+div.cell input#login1 (Same outcome)
+

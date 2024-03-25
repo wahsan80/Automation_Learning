@@ -1,0 +1,53 @@
+Static vs Non Static Methods.
+
+https://www.geeksforgeeks.org/difference-between-static-and-non-static-method-in-java/
+
+A static method is a method that belongs to a class, but it does not belong to an instance of that class and this 
+method can be called without the instance or object of that class. Every method in java defaults to a non-static 
+method without static keyword preceding it. Non-static methods can access any static method and static variable, 
+without creating an instance of the object.
+
+Difference between Static and Non-Static Methods?
+
+Let us clarify the differences Below are the various important differences among these pointers as follows:
+
+Accessing members and methods
+Calling process
+Binding process
+Overriding process
+Memory allocation
+
+1. Accessing members and methods
+A static method can only access static data members and static methods of another class or the same class but 
+cannot access non-static methods and variables. Also, a static method can rewrite the values of any static data 
+member.
+
+A non-static method can access static data members and static methods as well as non-static members and methods 
+of another class or the same class, and also can change the values of any static data member
+
+2. Calling process 
+The memory of a static method is fixed in the ram, for this reason, we don’t need the object of a class in which 
+the static method is defined to call the static method. To call the method we need to write the class name 
+followed by the name of the method
+The memory of the non-static method is not fixed in the ram, so we need a class object to call a non-static method.
+To call the method we need to write the name of the method followed by the class object name
+
+3. Binding process 
+In the static method, the method use compile-time or early binding. For this reason, we can access the static 
+method without creating an instance. In a non-static method, the method use runtime or dynamic binding. So that 
+we cannot access a non-static method without creating an instance. 
+
+4. Overriding 
+In the static method, we cannot override a static method, because of early binding. 
+
+5. Memory allocation 
+In the static method, memory allocation happens only once, because the static keyword fixed a particular memory 
+for that method in ram. So when the method is called every time in a program, each time that particular memory is 
+used. For that reason, less memory is allocated.
+
+In the non-static method, here memory allocation happens when the method is invoked and the memory is allocated 
+every time when the method is called. So much memory is used here. Now, lastly plotting table in order to grasp 
+altogether
+
+
+
