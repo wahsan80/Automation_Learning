@@ -1,0 +1,39 @@
+Introducing Selenium WebDriver Manager
+
+https://www.selenium.dev/documentation/webdriver/
+https://www.selenium.dev/blog/2022/introducing-selenium-manager/ (Creator posted.)
+
+WebDriver
+
+WebDriver drives a browser natively; learn more about it.
+WebDriver drives a browser natively, as a user would, either locally or on a remote machine using the Selenium 
+server, marks a leap forward in terms of browser automation.
+
+Selenium WebDriver refers to both the language bindings and the implementations of the individual browser 
+controlling code. This is commonly referred to as just WebDriver.
+
+Selenium WebDriver is a W3C Recommendation
+
+	1. WebDriver is designed as a simple and more concise programming interface.
+ 	2.WebDriver is a compact object-oriented API.
+	3. It drives the browser effectively.
+
+Getting started
+If you are new to Selenium, we have a few resources that can help you get up to speed right away.
+
+Driver Sessions
+Supported Browsers
+Waiting Strategies
+Web elements
+Identifying and working with element objects in the DOM.
+
+Browser interactions
+Actions API
+A low-level interface for providing virtualized device input actions to the web browser.
+
+BiDirectional functionality
+Support features
+Support classes provide optional higher level features.
+
+Troubleshooting Assistance
+How to get manage WebDriver problems.

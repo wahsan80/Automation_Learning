@@ -7,7 +7,7 @@
   	<parameter name = "username" value = "seleniumpanda@rediffmail.com"/>
   	<parameter name = "password" value = "Selenium@123"/>
     <classes>
-      <class name="testing_Code_Mar22.Parameterization"/>
+      <class name="testing_Code_Mar22.Optional_Parameterization"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

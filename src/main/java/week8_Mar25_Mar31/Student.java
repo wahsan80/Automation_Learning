@@ -6,7 +6,6 @@ public class Student {
 	int student_id;
 	int age;
 	
-	/*
 	public static void main(String[] args) {
 		
 		Student s1 = new Student();
@@ -23,19 +22,18 @@ public class Student {
 		s3.name = "Java";
 		s3.student_id = 102;
 		s3.age = 12;
+		
+		Student s4 = new Student();
+		
+		Student s5 = new Student("Selenium", 100, 10);
+		Student s6 = new Student("Panda", 101, 11);
+		Student s7 = new Student("Java", 102, 12);
+		
 	}	
-	*/
+	
 	public Student() { // Need to create the corresponding Constructor as per arguments
 		
 		System.out.println("Testing.");
-	}
-	
-	public static void main(String[] args) {
-		
-		Student s1 = new Student("Selenium", 100, 10);
-		Student s2 = new Student("Panda", 101, 11);
-		Student s3 = new Student("Java", 102, 12);
-		Student s4 = new Student();
 	}
 	
 	public Student(String name, int student_id, int age) { 
@@ -48,11 +46,9 @@ public class Student {
 		//System.out.println(name);
 		//System.out.println(student_id);
 		//System.out.println(age);
-		//System.out.println("===============");
+		System.out.println("===============");
 		System.out.println(this.name);
 		System.out.println(this.student_id);
-		System.out.println(this.age);
-		System.out.println("===============");
-		
+		System.out.println(this.age);		
 	}
 }
