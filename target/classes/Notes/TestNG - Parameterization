@@ -1,0 +1,13 @@
+TestNG Parameterization
+
+Parameterization is an execution strategy that runs a test case automatically multiple times with various input 
+values. The test design provides the provision to read data from a file or database rather than hard-coded values.
+
+In TestNG, there are two ways by which to achieve parameterization:
+
+1. With the help of Parameters annotation and TestNG XML file
+@Parameters({“name”, “searchKey”})
+
+2. With the help of DataProvider annotation
+@DataProvider(name= “searchProvider”)
+

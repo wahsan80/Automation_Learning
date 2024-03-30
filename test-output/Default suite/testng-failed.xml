@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing_Code_Mar25.NewSelectors_Selenium4">
+      <class name="testing_Code_Mar30.OrangeHRM_Parameters">
         <methods>
-          <include name="checkingNewLocators"/>
+          <include name="signUp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testing_Code_Mar25.NewSelectors_Selenium4 -->
+      </class> <!-- testing_Code_Mar30.OrangeHRM_Parameters -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

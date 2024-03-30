@@ -3,17 +3,17 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <parameter name="password" value="Selenium@123"/>
-    <parameter name="Url" value="https://www.rediff.com"/>
-    <parameter name="Browser" value="Chrome"/>
-    <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+    <parameter name="Browser1" value="Edge"/>
+    <parameter name="Browser2" value="Firefox"/>
+    <parameter name="Browser3" value="Chome"/>
+    <parameter name="url" value="https://mail.rediff.com/cgi-bin/login.cgi"/>
+    <parameter name="username" value="Seleniumpanda@rediffmail.com"/>
     <classes>
-      <class name="testing_Code_Mar22.Optional_Parameterization">
+      <class name="testing_Code_Mar29.Multiple_Browser_Parameters3">
         <methods>
-          <include name="browserSetup"/>
-          <include name="logIn"/>
-          <include name="closeUrl"/>
+          <include name="rediffLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testing_Code_Mar22.Optional_Parameterization -->
+      </class> <!-- testing_Code_Mar29.Multiple_Browser_Parameters3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

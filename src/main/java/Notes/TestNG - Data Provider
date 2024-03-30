@@ -1,0 +1,52 @@
+Data Provider Concept
+
+https://www.browserstack.com/guide/dataprovider-in-selenium-testng
+
+Automation testing has become a fixture in the software development process. No one wants to devote hours of human 
+effort and time when they can get accurate results with the right test scripts, frameworks, and tools. This is why 
+it is essential to understand the different aspects of automated testing.
+
+Note: TestNG comes up with DataProvider to automate the process of providing test cases for execution.
+
+DataProvider helps with data-driven test cases that carry the same methods but can be run multiple times with 
+different data sets. It also helps in providing complex parameters to the test methods.
+
+What is a Data Driven Framework?
+A data-driven framework stores the test data in a table or spreadsheet format. It allows automation engineers to 
+use a single test script to execute all test data in the table. In this framework, input values are read from data 
+files and are stored in a variable in test scripts. Data-Driven testing enables the creation of both positive and 
+negative test cases into a single test.
+
+In this test automation framework, input data can be stored in a single or multiple data sources like XLS, XML, CSV
+, and databases.
+
+DataProvider in TestNG
+
+To provide the test data, first declare a method that returns the data set in the form of a two-dimensional object 
+array Object[][].
+
+- The first array represents a data set, whereas the second contains parameter values.
+- The DataProvider method can be in the same test class or one of its superclasses.
+- It is also possible to provide a DataProvider in another class but the technique has to be static.
+
+After adding this method, annotate it using @DataProvider to let TestNG know it is a DataProvider method. 
+Additionally, provide a name using the name attribute of the DataProvider annotation. If one hasn’t provided the 
+word, by default, the method’s name will be used for reference.
+
+Parameterization using DataProvider
+
+Entering thousands of web forms using the testing framework is tedious. To ease this process, one needs a different
+process for executing large datasets in single execution flow. This data-driven concept is achieved through 
+@DataProvider annotation in TestNG framework.
+
+It has only one attribute ‘name’. If one does not specify the name attribute, then the DataProvider’s name will be
+the same as the corresponding method name. This is how DataProvider eases the task of testing multiple sets of 
+data.
+
+Closing Notes
+
+- Running Selenium tests using DataProvider and TestNG is an excellent way to speed up test cycles
+- Data Provider in Selenium TestNG establishes more thorough automated testing of websites, and create phenomenal 
+user experiences with minimal time, effort, and resources.
+- It should feature prominently in testing pipelines, as it serves to make testers’ lives infinitely more 
+accessible.
