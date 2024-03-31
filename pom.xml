@@ -4,6 +4,14 @@
   <artifactId>Auto_Learning</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <repositories>
+    <repository>
+        <id>screen-recorder</id>
+        <name>Java screen recorder library by agomezmoron</name>
+        <url>https://raw.github.com/agomezmoron/screen-recorder/mvn-repo</url>
+    </repository>
+</repositories>
+  
   <dependencies>
   
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -28,6 +36,18 @@
     <scope>test</scope>
 </dependency>
 
+<dependency>
+    <groupId>com.github.agomezmoron</groupId>
+    <artifactId>screen-recorder</artifactId>
+    <version>0.0.3</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
+<dependency>
+    <groupId>com.github.stephenc.monte</groupId>
+    <artifactId>monte-screen-recorder</artifactId>
+    <version>0.7.7.0</version>
+</dependency>
 
 
   </dependencies>

@@ -1,0 +1,27 @@
+Polymorphism
+
+https://www.w3schools.com/java/java_polymorphism.asp#:~:text=Polymorphism%20means%20%22many%20forms%22%2C,methods%20to%20perform%20different%20tasks.
+
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by 
+inheritance.
+
+Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to 
+perform different tasks. This allows us to perform a single action in different ways.
+
+For example, think of a superclass called Animal that has a method called animalSound(). Subclasses of Animals 
+could be Pigs, Cats, Dogs, Birds - And they also have their own implementation of an animal sound (the pig 
+oinks, and the cat meows, etc.):
+
+Inheritance -> Polymorphism
+
+Types of Polymorphism: -
+1. Compile Time Polymorphism/ Static Polymorphism
+2. Run Time Polymorphism / Dynamic Polymorphism
+
+Criterias to attain Compile (Static) Time Polymorphism
+1. Achieved by Method Overloading
+2. Method name should be same, Class should be same, Different Arguments/Parameters
+
+Criterias to attain Run time (Dynamic) Polymorphism
+1. Achieved by Method overriding
+2. Method name should be same, Class should be different, Same arguments/parameters

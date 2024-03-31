@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testing_Code_Mar30.OrangeHRM_Parameters">
+      <class name="testing_Code_Mar31.Rediff_Recording">
         <methods>
-          <include name="signUp"/>
-          <include name="closeBrowser"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- testing_Code_Mar30.OrangeHRM_Parameters -->
+      </class> <!-- testing_Code_Mar31.Rediff_Recording -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
