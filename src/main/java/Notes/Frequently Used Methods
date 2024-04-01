@@ -75,3 +75,4 @@ valueOf()
 
 navigate()
 back()
+load() // Properties file
