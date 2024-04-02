@@ -1,0 +1,8 @@
+Eclipse IDE
+
+Install Software - First check what is already installed? 
+
+Help -> Install New Software (Click) -> What is already installed (Click)? Confirm TestNG
+
+Window -> Show View -> Other -> Java -> TestNG (Confirm)
+
