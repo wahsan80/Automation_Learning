@@ -1,6 +1,6 @@
 Java/Selenium Key Words - List all the keywords and a brief description
 
-Displayed in purple color within code
+Displayed in purple color within code. Key words are 'case' sensitive. 
 
 package = 
 public =
@@ -16,3 +16,10 @@ extends =
 return = 
 new = 
 throws = 
+abstract = 
+protected = 
+private = 
+default = 
+final = 
+implements = 
+

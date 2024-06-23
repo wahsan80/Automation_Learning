@@ -1,0 +1,37 @@
+1. keywords
+these are pre-defined, around 50 of them
+maroon color
+
+Rule - Do not create the name of a Class which is same as a keyword
+--------------------------------------------------------------------------
+2. Create a package - naming convention of a package
+   Create a Class - naming convention of a Class
+   choose to select on the checkbox which will give u the main method
+   if you miss to select that checkbox it is good. Try writing main method yourself
+---------------------------------------------------------------------------
+3. access modifiers- 
+   public, private, protected, default
+
+default keyword to create a method inside a Java Class is not allowed
+it is only possible if we create inside an interface
+------------------------------------------------------------------------------
+4. main method is execution engine of the Java Class
+you can write      public static void main()
+you can also write static public void main()
+you cannot change return type of main method from void to anything else. Runtime error will show 
+
+Interview Questions: -
+1. Why is main method always static
+2. Why main method cannot have any other return type than void
+3. Can we overload the main method - YES
+4. Will the overloaded main method have the same power as the regular main method - No
+------------------------------------------------------------------------------------
+5. Print statements in Java
+syso and Ctrl+Spacebar will give you System.out.println();
+
+----------------------------------------------------------------------------------
+6. Operators in Java
+https://www.w3schools.com/java/java_operators.asp
+
+---------------------------------------------------------------------------------------
+

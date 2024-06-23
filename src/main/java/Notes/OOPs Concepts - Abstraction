@@ -1,0 +1,10 @@
+Abstraction in Programming - Definition
+
+Abstraction in computer science is the process of removing elements of a code or program that aren't relevant
+or that distract from more important elements. Abstraction refers to looking at something to maintain the 
+general form or meaning while reducing the presence of specific details.
+
+Through the process of abstraction, a programmer hides all but the relevant data about an object in order to
+reduce complexity and increase efficiency. In the same way that abstraction sometimes works in art, the object 
+that remains is a representation of the original, with unwanted detail omitted.
+

@@ -1,0 +1,34 @@
+https://www.browserstack.com/guide/architecture-of-selenium-webdriver
+
+Difference between Architecture of Selenium 3 & Selenium 4
+
+With the release of Selenium 4 there has been some significant Differences between the Selenium 3 and 4 which 
+are highlighted below:
+
+1. Communication between client-server: Selenium 3 architecture uses JSON Wire protocol to transfer 
+information from the client to the server over HTTP. This protocol is used to serialise and deserialize 
+object’s data to JSON format and vice versa respectively. However, Selenium 4 has dropped the JSON Wire 
+protocol to ensure direct communication between client and the server.
+
+2. W3C compliant: Selenium 3 does not fully adhere to W3C guidelines whereas Selenium 4 is fully W3C compliant
+as it acts in accordance with the W3C standards and guidelines.
+
+3. Selenium Grid: In Selenium Grid 3, testers are bound to start the hub and node jars every time they need to 
+execute the test automation. On the contrary, in Selenium Grid 4, hub and node jars are packed in a single jar
+and it is not required for the testers to start it each time they need to execute the automation tests.
+
+4. ChromeDriver: In Selenium 3 class ChromeDriver directly extended RemoteWebDriver class however in Selenium 4
+ChromeDriver class extends ChromiumDriver. 
+
+5. Selenium IDE: Selenium IDE is a record and play tool which only supported the Firefox browser in Selenium 3.
+In Selenium 4, it supports Chrome browser along with Firefox. New Plug-in system, allows any browser to easily
+plug into the new Selenium IDE with its locator strategy and IDE plugin. It also allows parallel test 
+execution and provides metrics on the total tests executed, as PASS/FAIL status.
+
+6. Relative Locators: Relative Locators newly introduced in Selenium 4 allows locating elements located near to
+the location of other web elements on the page with the help of methods such as above(), below(), toLeftOf(), 
+toRightOf(), near(). Selenium 3 lacked this feature.
+
+7. ChromeDevTools Protocol (CDP): Selenium 3 has no support for ChromeDevTools Protocol. Selenium 4 supports 
+CDP which provides access to a wide range of advanced browser debugging and automation capabilities. Testers 
+can benefit from features such as DOM inspection, Performance profiling and network traffic analysis.  
