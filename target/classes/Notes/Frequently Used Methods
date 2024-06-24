@@ -81,3 +81,7 @@ getProperty() // File path.
 getRowCount() // Row count in excel sheet. 
 getColumnCount() // 
 getCellData() // 
+
+getText()
+getAttribute()
+getLocation()
