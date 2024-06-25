@@ -85,3 +85,13 @@ getCellData() //
 getText()
 getAttribute()
 getLocation()
+
+concat()
+isEmpty()
+trim()
+equalsIgnoreCae()
+compareTo()
+compareToIgnoreCase()
+join()
+substring()
+
