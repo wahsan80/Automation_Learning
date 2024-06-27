@@ -50,3 +50,17 @@ Closing Notes
 user experiences with minimal time, effort, and resources.
 - It should feature prominently in testing pipelines, as it serves to make testers’ lives infinitely more 
 accessible.
+
+K---- Notes:
+
+How to execute multiple test cases with a single @DataProvider
+
+1. Create a seperate package and in that package create a Class and keep your @DataProvider in that Class
+2. Create another Class and keep your test cases in this
+3. Make the method of the @DataProvider static
+4. Linking the Classes:
+	In the @Test case(s) you have to pass dataProviderClass annotation
+	@Test(dataProviderClass = className.class)
+5. @Test(dataProvider = "getData") // example for each and every test case
+6. public void dataConcept(String name, String password, int rollNumber, String browser){}
+7. Pass method an an input parameter inside the method of the @DataProvider
