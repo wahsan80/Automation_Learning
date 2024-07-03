@@ -1,0 +1,90 @@
+Github Advance/Additional Commands
+
+K Repository - 
+
+https://github.com/seleniumpandaofficial/PnT_WeekEndBatch_October2022
+
+git config user.name
+git config --get user.name (To get your current username)
+git config --get user.email (To get your current email)
+git config user.email
+pwd - present working directory
+cd - change directory 
+ls - list
+ls -al (lists all the files in current directory)
+ls -lart (last modified time - in certain order)
+
+https://www.geeksforgeeks.org/ls-command-in-linux/
+
+rmdir logs - remove directory logs?
+mkdir newnotes - Make new directory
+
+touch Data.xlsx - Create a new Excel empty file 
+
+explorer . - Opens the present working directory
+start . - Opens the present working directory
+
+Git Recap
+
+rm -rf .git [this will delete the .git hidden folder in present directory]
+git add -A [This will add everything]
+git add --a [This will add everything]
+git commit -m "firstcommit" [This will make the files committed]
+git remote add origin git@github.com:wahsan80/Git-Working.git [Only when you are pushing the code the very first time]
+git push -u origin master [This will show your code in the github repo]
+
+Only to add modified/new files/changes, we'll use the following command
+
+git add . 
+
+git working pattern
+
+Untracked files >> Staged files >> Committed Files >> Moved to Master
+
+Skipping the staging area for a modified file 
+
+git commit -a -m filename [Always remember only a modified file can be made to skip staging. Untracked file can't]
+
+git pull origin master - fetches commits from the master branch of the origin remote (into the local origin/master 
+branch), and then it merges origin/master into the branch you currently have checked out. `git pull` only works if 
+the branch you have checked out is tracking an upstream branch.
+
+Fir the first time please do 'Git clone'
+
+git clone https://github/seleniumpandaofficial/Repo1
+
+git pull https://github/seleniumpandaofficial/Repo1
+
+Git Logs -----------------------------
+
+git log
+git log -show-signature
+git lop -p
+git log -p -3
+git log --stat
+
+Collaboration in Git ------------------
+
+The owner will invite the collaborators
+Repo > Settings > Collaborators > Add People
+
+How to ignore files in Git -----------------
+
+Step 1: First you have to create a file known as .gitignore
+Step 2: Create few more files
+Step 3: Open the .gitignore via notepad
+Step 4: Add the FullFileNameWith extention inside the .gitignore file
+Step 5: git status 
+Step 6: In case you want to ignore all files of a particular extention e.g, .txt then type *.txt in .gitignore file
+Step 7: git status
+
+Branching in Git -------------------------
+
+git branch [This will list all the branches]
+git branch Ahsan [This will vreate theNew Branch]
+git checkout Ahsan [Switch to Branch 'Ahsan' and take control]
+git checkout -b BranchName [This will create the branch as well as take control]  
+git merge 'BranchName' [???]
+git branch -d WaqasQA1 [Deletes the branch from the staging area]
+git push origin --delete WaqasQA1 [Delete the branch from command prompt that was created in Github]
+
